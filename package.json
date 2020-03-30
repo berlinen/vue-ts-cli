@@ -1,0 +1,17 @@
+{
+  "name": "little-bird-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "babel src -d dist",
+    "watch": "npm run compile -- --watch"
+  },
+  "bin": {
+    "little-bird-cli": "./bin/cmd",
+    "lb-cli": "./bin/cmd",
+    "lbc": "./bin/cmd"
+  },
+  "author": "",
+  "license": "ISC"
+}
