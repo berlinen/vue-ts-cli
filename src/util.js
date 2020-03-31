@@ -55,3 +55,18 @@ let downloadTemplate = async (ProjectName, api) => {
     })
   })
 }
+
+// 更新json配置文件
+let updateJsonFile = (fileName, obj) => {
+  return new Promise((resolve) => {
+    if(fs.existsSync(fileName)) {
+      const data = fs.readFileSync(fileName).toString()
+      let json = JSON.parse(data);
+      Object.keys(json).forEach(key => {
+        json[key] = obj[key]
+      })
+      fs.writeFileSync(fileName, JSON.stringify(json, null, '\t'), 'utf-8');
+      resolve();
+    }
+  })
+}
