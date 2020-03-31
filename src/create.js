@@ -59,3 +59,5 @@ let create = async (projectName) => {
       })
   }
 }
+
+module.exports = create
