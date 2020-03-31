@@ -31,6 +31,7 @@ let create = async (projectName) => {
             let loading = ora('模版下载中...')
             loading.start('模板下载中...')
 
+            // 获取对应的资源项目地址
             let Api = ''
             switch(answer.frame) {
              case 'Vue':
