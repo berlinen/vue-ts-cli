@@ -6,10 +6,10 @@ let init = () => {
   child.exec('git init', () => {
     console.log(symbol.success, chalk.green('git 初始化完成'));
     child.exec('npm install', (error, stdout, stderr) => {
-      console.log(symbol.success, chalk.green(stdout));
-      console.log(symbol.error,  chalk.red(stderr));
+      console.log(symbol.success, chalk.green(stdout))
+      console.log(symbol.error,  chalk.red(stderr))
       if(error !== null) {
-        console.log(symbol.error, chalk.red(error));
+        console.log(symbol.error, chalk.red(error))
       } else {
         console.log(symbol.success,  chalk.green('npm依赖安装完成'));
       }
@@ -21,4 +21,4 @@ let init = () => {
   })
 }
 
-module.exports = init;
+module.exports = init
