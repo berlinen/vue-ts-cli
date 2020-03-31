@@ -35,3 +35,23 @@ let promptList = [
   message: 'Please enter the author name: '
   }
 ]
+
+let prompt = () => {
+  return new Promise(resolve => {
+    inquirer
+      .prompt(promptList)
+      .then(answer => {
+        resolve(answer)
+      })
+  })
+}
+
+// 项目模板远程下载
+let downloadTemplate = async (ProjectName, api) => {
+  return new Promise((resolve, reject) => {
+    downloadGit(api, ProjectName, { clone: true }, err => {
+      if(err) reject(err)
+      else resolve()
+    })
+  })
+}
