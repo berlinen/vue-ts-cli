@@ -70,3 +70,10 @@ let updateJsonFile = (fileName, obj) => {
     }
   })
 }
+
+module.exports = {
+  notExistFold,
+  prompt,
+  downloadTemplate,
+  updateJsonFile
+}
