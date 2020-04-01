@@ -72,3 +72,13 @@ import build from './build' // 项目打包
     alias: 'b'
   }
  }
+
+ // 添加create init dev 命令
+ Object.keys(actionMap).forEach(action => {
+   if(actionMap[action].options) {
+     Object.keys(actionMap[action].options).forEach(option => {
+       let obj = actionMap[action].options[option]
+       program.option(obj.flags, obj.description, obj.defaultValue)
+     })
+   }
+ })
