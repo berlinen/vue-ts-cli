@@ -85,4 +85,14 @@ import build from './build' // 项目打包
    program
         .command(action)
         .description(actionMap[action].description)
+        .alias(actionMap[action].alias)
+        .action(() => {
+          switch (action) {
+            // 到这里具体命令实现逻辑还空缺，我们先打日志，看下命令处理情况
+            case 'create':
+              create(...process.argv.slice(3))
+              break;
+            
+          }
+        })
  })
