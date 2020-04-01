@@ -1,1 +1,4 @@
-console.log('我是一个可以正常运行的项目啦！！！')
+import program from 'commander'
+import symbol from 'log-symbols'
+import chalk from 'chalk'
+
