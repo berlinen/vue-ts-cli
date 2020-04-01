@@ -13,5 +13,24 @@ import build from './build' // 项目打包
  */
 
  let actionMap = {
-  
+  // 项目创建
+  create: {
+    description: '创建一个新的项目', // 描述
+    usages: [ // 使用方法
+      'templat-cli create ProjectName',
+      'tp-cli create ProjectName',
+      'tc create ProjectName'
+    ],
+    alias: 'c' // 命令简称
+  },
+  // 项目初始化
+  init: {
+    description: '初始化项目',
+    usages: [
+      'templat-cli init',
+      'tp-cli init',
+      'tc init'
+    ],
+    alias: 'i'
+  }
  }
