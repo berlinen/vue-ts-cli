@@ -8,9 +8,9 @@
     "watch": "npm run compile -- --watch"
   },
   "bin": {
-    "little-bird-cli": "./bin/cmd",
-    "lb-cli": "./bin/cmd",
-    "lbc": "./bin/cmd"
+    "templat-cli": "./bin/cmd",
+    "tp-cli": "./bin/cmd",
+    "tc": "./bin/cmd"
   },
   "keywords": [
     "cli",
