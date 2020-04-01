@@ -81,4 +81,8 @@ import build from './build' // 项目打包
        program.option(obj.flags, obj.description, obj.defaultValue)
      })
    }
+
+   program
+        .command(action)
+        .description(actionMap[action].description)
  })
