@@ -17,7 +17,7 @@ import build from './build' // 项目打包
   create: {
     description: '创建一个新的项目', // 描述
     usages: [ // 使用方法
-      'templat-cli create ProjectName',
+      'template-cli create ProjectName',
       'tp-cli create ProjectName',
       'tc create ProjectName'
     ],
@@ -27,10 +27,27 @@ import build from './build' // 项目打包
   init: {
     description: '初始化项目',
     usages: [
-      'templat-cli init',
+      'template-cli init',
       'tp-cli init',
       'tc init'
     ],
     alias: 'i'
+  },
+  // 启动项目
+  dev: {
+    description: '本地启动项目',
+    usages: [
+      'template-cli dev',
+      'tp-cli dev',
+      'tc dev'
+    ],
+    options: [
+      {
+        flags: '-p --port <port>',
+        description: '端口',
+        defaultValue: 3000
+      }
+    ],
+    alias: 'd'
   }
  }
