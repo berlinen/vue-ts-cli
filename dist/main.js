@@ -65,7 +65,7 @@ let actionMap = {
   },
   build: {
     description: '服务端项目打包',
-    usages: ['little-bird-cli build', 'lb-cli build', 'lbc build'],
+    usages: ['template-cli build', 'tp-cli build', 'tc build'],
     options: [{
       flags: '-u --username <port>',
       description: 'github用户名',

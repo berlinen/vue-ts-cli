@@ -1,5 +1,5 @@
 {
-  "name": "little-bird-cli",
+  "name": "template-cli",
   "version": "1.0.0",
   "description": "前端脚手架CLI工具",
   "main": "index.js",
