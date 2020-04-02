@@ -53,9 +53,9 @@ import build from './build.js' // 项目打包
   build: {
     description: '服务端项目打包',
     usages: [
-        'little-bird-cli build',
-        'lb-cli build',
-        'lbc build'
+      'template-cli build',
+      'tp-cli build',
+      'tc build'
     ],
     options: [
       {
