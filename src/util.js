@@ -22,7 +22,7 @@ let promptList = [
   type: 'list',
   name: 'frame',
   message: 'please choose this project template',
-  choice:  ['vue', 'react']
+  choices:  ['vue', 'react']
  },
  {
   type: 'input',
@@ -38,11 +38,11 @@ let promptList = [
 
 let prompt = () => {
   return new Promise(resolve => {
-    inquirer
-      .prompt(promptList)
-      .then(answer => {
-        resolve(answer)
-      })
+      inquirer
+          .prompt(promptList)
+          .then(answer => {
+              resolve(answer)
+          })
   })
 }
 

@@ -45,11 +45,11 @@ let create = async (projectName) => {
             }
 
             // 下载
-            downloadTemplate(ProjectName, Api).then(() => {
+            downloadTemplate(projectName, Api).then(() => {
               loading.succeed('模板下载完成')
               // 下载完成后,根据用户输入更新配置文件
               const fileName = `${projectName}/package.json`
-              answer.name = ProjectName
+              answer.name = projectName
               updateJsonFile(fileName, answer).then(() => {
                 console.log(symbol.success, chalk.green('配置文件更新完的'))
               })

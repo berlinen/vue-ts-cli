@@ -39,7 +39,7 @@ let promptList = [{
   type: 'list',
   name: 'frame',
   message: 'please choose this project template',
-  choice: ['vue', 'react']
+  choices: ['vue', 'react']
 }, {
   type: 'input',
   name: 'description',
