@@ -28,13 +28,8 @@
   * @param {String} repo
   */
  function github(repo) {
-    return 'https://github.com/'
-    + repo.owner
-    + '/'
-    + repo.name
-    + '/archive/'
-    + repo.branch
-    + '.zip';
+    const {owner, name, branch} = repo
+    return `https://github.com/${owner}/${name}/archive/${branch}.zip`
  }
 
  module.exports = download
