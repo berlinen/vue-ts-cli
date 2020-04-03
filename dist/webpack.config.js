@@ -33,7 +33,7 @@ module.exports = {
             loader: 'ts-loader', //ts加载器
             options: {
                 transpileOnly: true,
-                appendTsSuffixTo: [/.vue$/] //认识vue文件
+                appendTsSuffixTo: [/\.vue$/] //认识vue文件
 
             } }, {
             test: /\.(css|less)$/,
