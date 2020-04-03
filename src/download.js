@@ -23,4 +23,18 @@
    })
  }
 
+ /**
+  *
+  * @param {String} repo
+  */
+ function github(repo) {
+    return 'https://github.com/'
+    + repo.owner
+    + '/'
+    + repo.name
+    + '/archive/'
+    + repo.branch
+    + '.zip';
+ }
+
  module.exports = download
