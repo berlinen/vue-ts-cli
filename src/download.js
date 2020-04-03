@@ -24,7 +24,7 @@
  }
 
  /**
-  *
+  * @description github url repositories
   * @param {String} repo
   */
  function github(repo) {
