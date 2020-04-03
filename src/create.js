@@ -19,6 +19,7 @@ let create = async (projectName) => {
       notExistFold(projectName).then(() => {
         // 用户询问交互
         prompt().then(answer => {
+          console.log('answer:' + answer.frame)
            // 目前只建了一个vue的模板，所以只能先跳过react🌶
            if(answer.frame === 'react') {
             console.log(symbol.warning, chalk.yellow('react模板还在路上，莫急莫急~'));
@@ -34,7 +35,7 @@ let create = async (projectName) => {
             // 获取对应的资源项目地址
             let Api = ''
             switch(answer.frame) {
-             case 'Vue':
+             case 'vue':
               Api = 'direct:https://github.com/For-Article/vue-temlate.git';
               break;
              case 'react':
