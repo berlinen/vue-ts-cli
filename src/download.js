@@ -32,4 +32,26 @@
     return `https://github.com/${owner}/${name}/archive/${branch}.zip`
  }
 
+ /**
+  * @description normalize
+  * @param {string} string
+  */
+ function normalize(string) {
+  let url = string.split('/')
+  let owner = url[0]
+  let name = url[1]
+  const branch = 'master'
+
+  if(~name.includes('#')) {
+    branch = name.split('#')[1]
+    name = name.split('#')[0]
+  }
+
+  return {
+    owner,
+    name,
+    branch
+  }
+ }
+
  module.exports = download
