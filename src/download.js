@@ -37,21 +37,20 @@
   * @param {string} string
   */
  function normalize(string) {
-  let url = string.split('/')
-  let owner = url[0]
-  let name = url[1]
-  const branch = 'master'
+  let owner = string.split('/')[0];
+  let name = string.split('/')[1];
+  let branch = 'master';
 
-  if(~name.includes('#')) {
-    branch = name.split('#')[1]
-    name = name.split('#')[0]
+  if (~name.indexOf('#')) {
+    branch = name.split('#')[1];
+    name = name.split('#')[0];
   }
 
   return {
-    owner,
-    name,
-    branch
-  }
+    owner: owner,
+    name: name,
+    branch: branch
+  };
  }
 
  module.exports = download

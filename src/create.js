@@ -36,7 +36,7 @@ let create = async (projectName) => {
             let Api = ''
             switch(answer.frame) {
              case 'vue':
-              Api = 'direct:https://github.com/For-Article/vue-temlate.git';
+              Api = 'direct:https://github.com/berlinen/antd-vue.git';
               break;
              case 'react':
               Api = 'direct:https://github.com/berlinen/react-app-antd.git';
