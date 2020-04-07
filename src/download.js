@@ -33,7 +33,7 @@
  }
 
  /**
-  * @description normalize
+  * @description normalize parse url
   * @param {string} string
   */
  function normalize(string) {
