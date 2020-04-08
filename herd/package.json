@@ -77,7 +77,7 @@
     "koa2-file-upload": "^0.1.14",
     "lodash": "^4.17.4",
     "n-mocker": "^0.1.15",
-    "next": "^5.1.0",
+    "next": "^9.3.4",
     "node-sass": "^4.9.0",
     "promised-handlebars": "^2.0.1",
     "react": "^16.3.1",
