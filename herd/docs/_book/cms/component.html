@@ -1,0 +1,856 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>如何定义 handlebars 组件 · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="config.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    使用
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../usage.html">
+            
+                <a href="../usage.html">
+            
+                    
+                    安装与部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../config-file.html">
+            
+                <a href="../config-file.html">
+            
+                    
+                    配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../static-file-handler.html">
+            
+                <a href="../static-file-handler.html">
+            
+                    
+                    静态资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../service.html">
+            
+                <a href="../service.html">
+            
+                    
+                    服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../api-mapping.html">
+            
+                <a href="../api-mapping.html">
+            
+                    
+                    API 映射
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../csrf.html">
+            
+                <a href="../csrf.html">
+            
+                    
+                    csrf
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../extension.html">
+            
+                <a href="../extension.html">
+            
+                    
+                    扩展开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../get-login-user.html">
+            
+                <a href="../get-login-user.html">
+            
+                    
+                    获取登录用户
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../i18n.html">
+            
+                <a href="../i18n.html">
+            
+                    
+                    i18n
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../proxy.html">
+            
+                <a href="../proxy.html">
+            
+                    
+                    代理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../upload.html">
+            
+                <a href="../upload.html">
+            
+                    
+                    文件上传
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../mock.html">
+            
+                <a href="../mock.html">
+            
+                    
+                    mock数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../ssr.html">
+            
+                <a href="../ssr.html">
+            
+                    
+                    react server render
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" >
+            
+                <span>
+            
+                    
+                    权限
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.14.1" data-path="../rbac-auth.html">
+            
+                <a href="../rbac-auth.html">
+            
+                    
+                    Parana rbac 实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../error-handle.html">
+            
+                <a href="../error-handle.html">
+            
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../showcase.html">
+            
+                <a href="../showcase.html">
+            
+                    
+                    Showcase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="../develop-support.html">
+            
+                <a href="../develop-support.html">
+            
+                    
+                    开发中支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" >
+            
+                <span>
+            
+                    
+                    建站系统
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.18.1" data-path="article.html">
+            
+                <a href="article.html">
+            
+                    
+                    文章管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18.2" data-path="config.html">
+            
+                <a href="config.html">
+            
+                    
+                    装修系统配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.18.3" data-path="component.html">
+            
+                <a href="component.html">
+            
+                    
+                    如何定义 handlebars 组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    说明
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../cache-strategy.html">
+            
+                <a href="../cache-strategy.html">
+            
+                    
+                    缓存策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../handlebars-tips.html">
+            
+                <a href="../handlebars-tips.html">
+            
+                    
+                    Handlebars tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../monitor.html">
+            
+                <a href="../monitor.html">
+            
+                    
+                    集成监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../performance-tips.html">
+            
+                <a href="../performance-tips.html">
+            
+                    
+                    性能 tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../migration.html">
+            
+                <a href="../migration.html">
+            
+                    
+                    从 Pampas 迁移
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../invoke-filter.html">
+            
+                <a href="../invoke-filter.html">
+            
+                    
+                    invoke-filter
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../faq.html">
+            
+                <a href="../faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../step-by-step.html">
+            
+                <a href="../step-by-step.html">
+            
+                    
+                    示例(Handlebars)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../CHANGELOG.html">
+            
+                <a href="../CHANGELOG.html">
+            
+                    
+                    CHANGELOG
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >如何定义 handlebars 组件</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x5982;&#x4F55;&#x81EA;&#x5B9A;&#x4E49;handlebars&#x7EC4;&#x4EF6;">&#x5982;&#x4F55;&#x81EA;&#x5B9A;&#x4E49;handlebars&#x7EC4;&#x4EF6;</h2>
+<h3 id="&#x6982;&#x8FF0;">&#x6982;&#x8FF0;</h3>
+<p>&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#x5305;&#x542B;6&#x4E2A;&#x6587;&#x4EF6;:</p>
+<ul>
+<li>view.hbs &#x7EC4;&#x4EF6;&#x7684;html&#x7ED3;&#x6784;</li>
+<li>view.js(&#x53EF;&#x9009;) &#x6E32;&#x67D3;html&#x6210;&#x52A8;&#x6001;&#x7EC4;&#x4EF6;</li>
+<li>view.scss(&#x53EF;&#x9009;) &#x7EC4;&#x4EF6;&#x7684;&#x6837;&#x5F0F;</li>
+<li>config.js(&#x53EF;&#x9009;) &#x7EC4;&#x4EF6;&#x53EF;&#x914D;&#x7F6E;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x4F9B;&#x88C5;&#x4FEE;&#x7CFB;&#x7EDF;&#x4F7F;&#x7528;</li>
+<li>vendor_ext.js(&#x53EF;&#x9009;) &#x7EC4;&#x4EF6;&#x7684;&#x4F9D;&#x8D56;</li>
+<li>config.scss(&#x53EF;&#x9009;) &#x7EC4;&#x4EF6;&#x5728;&#x88C5;&#x4FEE;&#x6A21;&#x5F0F;&#x4E0B;&#x7684;&#x6837;&#x5F0F;</li>
+</ul>
+<h3 id="viewhbs">view.hbs</h3>
+<p>component helper:&#x7EC4;&#x4EF6;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x53C2;&#x6570;:&#x5BB9;&#x5668;&#x7684;className</p>
+<pre><code class="lang-handlebars"><span class="xml">       </span><span class="hljs-template-tag">{{#<span class="hljs-name">component</span> <span class="hljs-string">&quot;js-comp eve-comp&quot;</span>}}</span><span class="xml">
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>.......<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+       </span><span class="hljs-template-tag">{{/<span class="hljs-name">component</span>}}</span><span class="xml">
+</span></code></pre>
+<h3 id="viewjs">view.js</h3>
+<p>this.$el&#xFF1A;&#x5F53;&#x524D;&#x5BB9;&#x5668;&#x7684;jquery&#x5BF9;&#x8C61;</p>
+<pre><code class="lang-js">      <span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+         <span class="hljs-keyword">const</span> $el = <span class="hljs-keyword">this</span>.$el;
+         ......&#x7EC4;&#x4EF6;&#x7684;&#x521D;&#x59CB;&#x5316;&#x52A8;&#x4F5C;
+      &#xFF5D;
+</code></pre>
+<h3 id="viewscss">view.scss</h3>
+<pre><code class="lang-scss">      <span class="hljs-selector-class">.eve-comp</span>{
+          ......
+       }
+</code></pre>
+<h3 id="configjs">config.js</h3>
+<h4 id="propery&#x7684;&#x5B9A;&#x4E49;&#x5927;&#x90E8;&#x5206;&#x548C;&#x4EE5;&#x524D;&#x7C7B;&#x4F3C;&#xFF0C;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x70B9;&#x6539;&#x52A8;">Propery&#x7684;&#x5B9A;&#x4E49;&#x5927;&#x90E8;&#x5206;&#x548C;&#x4EE5;&#x524D;&#x7C7B;&#x4F3C;&#xFF0C;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x70B9;&#x6539;&#x52A8;</h4>
+<p><em>&#x7528;reduce&#x65B9;&#x6CD5;&#x66FF;&#x6362;&#x4E86;set&#x65B9;&#x6CD5;</em></p>
+<pre><code class="lang-js">         <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reduce</span>(<span class="hljs-params">config,value,[updateProperties={}]</span>)</span>{
+              <span class="hljs-comment">//config &#x5F53;&#x524D;&#x914D;&#x7F6E;</span>
+              <span class="hljs-comment">//value &#x5F53;&#x524D;&#x5C5E;&#x6027;&#x7684;&#x503C;</span>
+              <span class="hljs-comment">// updateProperties &#x9700;&#x8981;&#x66F4;&#x65B0;&#x7684;&#x5176;&#x4ED6;&#x5C5E;&#x6027;</span>
+              ......  <span class="hljs-comment">//&#x8BA1;&#x7B97;&#x65B0;&#x7684;config</span>
+              <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> config || <span class="hljs-built_in">Promise</span>&lt;config&gt;;
+          }
+</code></pre>
+<p>Propery Methods:(&#x65B0;&#x589E;)</p>
+<ul>
+<li>removeStyle(config,name) &#x79FB;&#x9664;&#x7EC4;&#x4EF6;&#x5BB9;&#x5668;&#x6837;&#x5F0F;&#x503C;</li>
+<li>combinStyle(config,value,name) &#x5408;&#x5E76;&#x7EC4;&#x4EF6;&#x5BB9;&#x5668;&#x6837;&#x5F0F;&#x503C;</li>
+<li>removeClass(config,&#xFF3B;...classes]) &#x79FB;&#x9664;&#x7EC4;&#x4EF6;&#x5BB9;&#x5668;ClassName</li>
+<li>addClass(config,[...classes])&#x6DFB;&#x52A0;&#x7EC4;&#x4EF6;&#x5BB9;&#x5668;ClassName</li>
+</ul>
+<h4 id="definedpropertyconfigoptionspropery-&#x81EA;&#x5B9A;&#x4E49;&#x5C5E;&#x6027;">definedProperty(config,options,[Propery]) &#x81EA;&#x5B9A;&#x4E49;&#x5C5E;&#x6027;</h4>
+<ul>
+<li>config &#x5F53;&#x524D;config&#x5BF9;&#x8C61;</li>
+<li>options &#x9700;&#x8981;&#x91CD;&#x5199;&#x7684;&#x5C5E;&#x6027;&#x6216;&#x65B9;&#x6CD5;</li>
+<li>Propery &#x7EE7;&#x627F;&#x5C5E;&#x6027;</li>
+</ul>
+<h4 id="propertybr-&#x6362;&#x884C;&#x5C5E;&#x6027;">PropertyBr &#x6362;&#x884C;&#x5C5E;&#x6027;</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">this</span>.registerConfigProperty(<span class="hljs-string">&apos;ext&apos;</span>, <span class="hljs-keyword">new</span> PropertyBr());
+</code></pre>
+<h4 id="registerconfigpropertynameproerties-&#x6CE8;&#x518C;&#x7EC4;&#x4EF6;">registerConfigProperty(name,[...Proerties]) &#x6CE8;&#x518C;&#x7EC4;&#x4EF6;</h4>
+<p>&#x4F8B;&#x5982;&#xFF1A; this&#xFF1A;&#x5F53;&#x524D;config&#x5BF9;&#x8C61;</p>
+<pre><code class="lang-js">    <span class="hljs-keyword">import</span> {definedProperty, PropertyBr} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;eevee/config/properties&apos;</span>;
+    <span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+       <span class="hljs-keyword">this</span>.baseInfo.name = <span class="hljs-string">&apos;&#x6587;&#x5B57;&#x7EC4;&#x4EF6;&apos;</span>; <span class="hljs-comment">//&#x7EC4;&#x4EF6;&#x7684;&#x540D;&#x79F0;</span>
+       <span class="hljs-keyword">this</span>.baseInfo.description = <span class="hljs-string">&apos;&#x4E00;&#x6BB5;&#x7528;&#x4E8E;&#x663E;&#x793A;&#x7684;&#x6587;&#x5B57;&apos;</span>; <span class="hljs-comment">//&#x7EC4;&#x4EF6;&#x7684;&#x63CF;&#x8FF0;</span>
+       <span class="hljs-keyword">this</span>.configs.ext = {  <span class="hljs-comment">//&#x6269;&#x5C55;&#x7EC4;&#x4EF6;&#x7684;config&#x6587;&#x4EF6;</span>
+          name: <span class="hljs-string">&apos;&#x7EC4;&#x4EF6;&#x8BBE;&#x7F6E;&apos;</span>
+       };
+       <span class="hljs-keyword">const</span> alignProperty = definedProperty(<span class="hljs-keyword">this</span>, {
+         name: <span class="hljs-string">&apos;align&apos;</span>,
+         label: <span class="hljs-string">&apos;&#x5BF9;&#x9F50;&apos;</span>,
+         description: <span class="hljs-string">&apos;&#x6587;&#x5B57;&#x7684;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;&apos;</span>,
+         type: <span class="hljs-string">&apos;radio&apos;</span>, <span class="hljs-comment">// &#x652F;&#x6301; datetime text textarea radio checkbox select button</span>
+         useData: <span class="hljs-literal">true</span>,
+         reRender: <span class="hljs-literal">false</span>,
+         options: { <span class="hljs-comment">// radio &#x914D;&#x7F6E;</span>
+           left: <span class="hljs-string">&apos;&#x5DE6;&#x5BF9;&#x9F50;&apos;</span>,
+            center: <span class="hljs-string">&apos;&#x5C45;&#x4E2D;&#x5BF9;&#x9F50;&apos;</span>,
+            right: <span class="hljs-string">&apos;&#x53F3;&#x5BF9;&#x9F50;&apos;</span>
+         },
+         <span class="hljs-string">&apos;default&apos;</span>: <span class="hljs-string">&apos;left&apos;</span>,
+         reduce: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">config, val</span>) </span>{
+            <span class="hljs-keyword">let</span> $editor = <span class="hljs-keyword">this</span>.$target.find(<span class="hljs-string">&apos;.text-content&apos;</span>);
+            $editor.css(<span class="hljs-string">&apos;text-align&apos;</span>, val);
+            <span class="hljs-keyword">if</span> (val === <span class="hljs-keyword">this</span>[<span class="hljs-string">&apos;default&apos;</span>]) {
+               <span class="hljs-keyword">delete</span> config[<span class="hljs-keyword">this</span>.name];
+               <span class="hljs-keyword">return</span> config;
+            }
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._reduce(config, val);
+         }
+      });
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.registerConfigProperty(<span class="hljs-string">&apos;ext&apos;</span>, alignProperty, <span class="hljs-keyword">new</span> PropertyBr());
+    }
+</code></pre>
+<h4 id="imageproperty-&#x56FE;&#x7247;&#x5C5E;&#x6027;">ImageProperty &#x56FE;&#x7247;&#x5C5E;&#x6027;</h4>
+<pre><code class="lang-js"> <span class="hljs-keyword">const</span> srcProperty = definedProperty(<span class="hljs-keyword">this</span>, {
+    name: <span class="hljs-string">&apos;src&apos;</span>,
+    label: <span class="hljs-string">&apos;&#x56FE;&#x7247;&#x5730;&#x5740;&apos;</span>,
+    description: <span class="hljs-string">&apos;&#x56FE;&#x7247;&#x5730;&#x5740;&apos;</span>,
+    options: {
+      <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">`&lt;i class=&quot;fa fa-picture-o&quot;&gt;&lt;/i&gt;&amp;nbsp;&#x9009;&#x62E9;&#x6216;&#x4E0A;&#x4F20;&#x56FE;&#x7247;`</span>
+    },
+    useData: <span class="hljs-literal">true</span>,
+    reduce: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">config, val</span>) </span>{
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.getImage().then((url) =&gt; {
+        <span class="hljs-keyword">if</span> (url &amp;&amp; url != <span class="hljs-string">&apos;&apos;</span>) {
+          <span class="hljs-keyword">return</span> _.assign(config, {
+            src: url
+          });
+        }
+        Essage.show({
+          message: <span class="hljs-string">&apos;&#x56FE;&#x7247;&#x7EC4;&#x4EF6;&#x4E0D;&#x80FD;&#x5C06;&#x56FE;&#x7247;&#x8BBE;&#x7F6E;&#x4E3A;&#x7A7A;&apos;</span>,
+          status: <span class="hljs-string">&apos;warning&apos;</span>
+        }, <span class="hljs-number">2000</span>);
+      }, () =&gt; { });
+    }
+  }, ImageProperty);
+</code></pre>
+<h4 id="defineddialogproperty-&#x5B9A;&#x4E49;dialog&#x5C5E;&#x6027;">definedDialogProperty &#x5B9A;&#x4E49;dialog&#x5C5E;&#x6027;</h4>
+<pre><code class="lang-js">  <span class="hljs-keyword">const</span> modalProperty = definedDialogProperty(<span class="hljs-keyword">this</span>, {
+    name: <span class="hljs-string">&apos;modal&apos;</span>,
+    label: <span class="hljs-string">&apos;&#x5F39;&#x7A97;&apos;</span>,
+    description: <span class="hljs-string">&apos;&#x5F39;&#x7A97;&apos;</span>,
+    reRender: <span class="hljs-literal">true</span>,
+    useData: <span class="hljs-literal">true</span>,
+    formFields: [
+      {
+        name: <span class="hljs-string">&apos;myradio&apos;</span>,
+        label: <span class="hljs-string">&apos;&#x5355;&#x9009;&#x6846;&apos;</span>,
+        type: <span class="hljs-string">&apos;radio&apos;</span>, <span class="hljs-comment">// radio box</span>
+        options: [
+          {label: <span class="hljs-string">&apos;&#x542F;&#x7528;&apos;</span>, value: <span class="hljs-string">&apos;1&apos;</span>, <span class="hljs-keyword">default</span>: <span class="hljs-literal">true</span>},
+          {label: <span class="hljs-string">&apos;&#x4E0D;&#x542F;&#x7528;&lt;br/&gt;&apos;</span>, value: <span class="hljs-string">&apos;0&apos;</span>},
+          {label: <span class="hljs-string">&apos;unknow&apos;</span>, value: <span class="hljs-string">&apos;-1&apos;</span>},
+          {label: <span class="hljs-string">&apos;xxxxxx&apos;</span>, value: <span class="hljs-string">&apos;-2&apos;</span>}
+        ],
+      },
+      {
+        name: <span class="hljs-string">&apos;myinput&apos;</span>,
+        label: <span class="hljs-string">&apos;&#x540D;&#x79F0;&apos;</span>,
+        type: <span class="hljs-string">&apos;text&apos;</span>  <span class="hljs-comment">// text input</span>
+      },
+      {
+        name: <span class="hljs-string">&apos;myimage&apos;</span>,
+        label: <span class="hljs-string">&apos;&#x56FE;&#x7247;&apos;</span>,
+        type: <span class="hljs-string">&apos;image&apos;</span> <span class="hljs-comment">// &#x56FE;&#x7247;&#x4E0A;&#x4F20;</span>
+      },
+      {
+        type: <span class="hljs-string">&apos;blank&apos;</span>  <span class="hljs-comment">// &#x7A7A;&#x884C;</span>
+      }
+    ]
+  });
+
+  <span class="hljs-comment">// formFields &#x4E5F;&#x53EF;&#x4EE5;&#x4E3A;&#x4E00;&#x4E2A;function</span>
+  formFields: () =&gt; {
+      <span class="hljs-keyword">return</span> [
+        {
+            name: <span class="hljs-string">&apos;myradio&apos;</span>,
+            label: <span class="hljs-string">&apos;&#x5355;&#x9009;&#x6846;&apos;</span>,
+            type: <span class="hljs-string">&apos;radio&apos;</span>, <span class="hljs-comment">// radio box</span>
+            options: [
+            {label: <span class="hljs-string">&apos;&#x542F;&#x7528;&apos;</span>, value: <span class="hljs-string">&apos;1&apos;</span>, <span class="hljs-keyword">default</span>: <span class="hljs-literal">true</span>},
+            {label: <span class="hljs-string">&apos;&#x4E0D;&#x542F;&#x7528;&lt;br/&gt;&apos;</span>, value: <span class="hljs-string">&apos;0&apos;</span>},
+            {label: <span class="hljs-string">&apos;unknow&apos;</span>, value: <span class="hljs-string">&apos;-1&apos;</span>},
+            {label: <span class="hljs-string">&apos;xxxxxx&apos;</span>, value: <span class="hljs-string">&apos;-2&apos;</span>}
+            ],
+        },
+        {
+            name: <span class="hljs-string">&apos;myinput&apos;</span>,
+            label: <span class="hljs-string">&apos;&#x540D;&#x79F0;&apos;</span>,
+            type: <span class="hljs-string">&apos;text&apos;</span>  <span class="hljs-comment">// text input</span>
+        },
+        {
+            name: <span class="hljs-string">&apos;myimage&apos;</span>,
+            label: <span class="hljs-string">&apos;&#x56FE;&#x7247;&apos;</span>,
+            type: <span class="hljs-string">&apos;image&apos;</span> <span class="hljs-comment">// &#x56FE;&#x7247;&#x4E0A;&#x4F20;</span>
+        },
+        {
+            type: <span class="hljs-string">&apos;blank&apos;</span>  <span class="hljs-comment">// &#x7A7A;&#x884C;</span>
+        }
+      ];
+  }
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="config.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 装修系统配置">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"如何定义 handlebars 组件","level":"1.2.18.3","depth":3,"next":{"title":"说明","level":"1.3","depth":1,"ref":"","articles":[{"title":"缓存策略","level":"1.3.1","depth":2,"path":"cache-strategy.md","ref":"cache-strategy.md","articles":[]},{"title":"Handlebars tips","level":"1.3.2","depth":2,"path":"handlebars-tips.md","ref":"handlebars-tips.md","articles":[]},{"title":"集成监控","level":"1.3.3","depth":2,"path":"monitor.md","ref":"monitor.md","articles":[]},{"title":"性能 tips","level":"1.3.4","depth":2,"path":"performance-tips.md","ref":"performance-tips.md","articles":[]},{"title":"从 Pampas 迁移","level":"1.3.5","depth":2,"path":"migration.md","ref":"migration.md","articles":[]},{"title":"invoke-filter","level":"1.3.6","depth":2,"path":"invoke-filter.md","ref":"invoke-filter.md","articles":[]}]},"previous":{"title":"装修系统配置","level":"1.2.18.2","depth":3,"path":"cms/config.md","ref":"cms/config.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"cms/component.md","mtime":"2019-03-21T07:25:35.569Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2019-04-03T05:47:12.985Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
