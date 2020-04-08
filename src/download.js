@@ -54,3 +54,11 @@
  }
 
  module.exports = download
+
+//  module.exports = (opts) => async (ctx, next) => {
+//   await next();
+
+//   const ancestor = opts.envs ? opts.envs.ifrProjectDomain : '';
+//   ctx.set('Content-Security-Policy', `frame-ancestors ${ancestor}`);
+//   ctx.set('X-Frame-Options', `allow-from ${ancestor}`);
+// };
